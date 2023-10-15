@@ -21,7 +21,7 @@ paddle_height = 4
 ball_x = WIDTH // 2
 ball_y = HEIGHT - 20
 ball_radius = 4
-ball_speed_x = random.choice([-1, 1])
+ball_speed_x = random.choice([-2, 2])
 ball_speed_y = -10
 
 # Bricks variables
@@ -38,7 +38,7 @@ def create_bricks():
     for i in range(10):
         for j in range(4):
             brick_x = i * brick_width
-            brick_y = j * brick_height
+            brick_y = j * brick_height + 30
             bricks.append((brick_x, brick_y))
 
 def draw_paddle():
